@@ -48,7 +48,7 @@ import Rx from 'rxjs/Rx';
 //     })
 
 const map = new Map([[1,2],[3,4],[5,6]])
-const map$ = Rx.Observable.from(map).share();
+const map$ = Rx.Observable.from(map);
 
 map$.subscribe(
     v => {
